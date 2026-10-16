@@ -2,5 +2,5 @@ url: https://github.com/439436269-ctrl/dsh-session-path
 name: 439436269-ctrl/dsh-session-path
 category: session
 description:
-  en: 'Copies a session log path (or a paste-ready handoff block) and turns the multi-frame zstd log into a readable file another session can continue from.'
-  zh: '复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。'
+  en: 'Resolves and hands off DeepSeek Harness session logs: a button in the session header copies a handoff block (title, session id, working directory, log path), the `session_path` tool returns or copies a session''s on-disk log path without writing anything, and `session_handoff` decompresses the multi-frame zstd session log into a readable Markdown or JSONL file that another session can read to continue the work.'
+  zh: '给 DSH 会话一条「路径」：会话 header 的按钮复制一段接续块（标题 / 会话 ID / 工作目录 / 日志路径）；`session_path` 只读地返回或复制会话日志路径、不落盘；`session_handoff` 把多帧 zstd 会话日志解压成可读的 Markdown 或 JSONL，供另一个会话接着干。'
